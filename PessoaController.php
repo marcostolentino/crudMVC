@@ -15,6 +15,12 @@ class PessoaController {
 
     private function acao() {
         $this->Model = new PessoaModel();
+
+        if (!isset($_POST['ACAO'])) {
+            return;
+        }
+
+        $this->acaoDescricaoPost = $_POST['ACAO'];
         try {
 
             //INCLUIR
@@ -45,7 +51,6 @@ class PessoaController {
     }
 
     public function listar() {
-        $this->acaoDescricaoPost = $_POST['ACAO'];
         $this->acao();
         $this->qry = $this->Model->listar();
         require_once 'PessoaView.php';
