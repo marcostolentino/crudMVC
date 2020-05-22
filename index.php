@@ -10,12 +10,11 @@ function pr($dado, $print_r = true) {
     }
 }
 
-//BANCO DE DADOS
-define('DBLIB', 'mysql');
-define('HOST', '127.0.0.1');
-define('DBNAME', 'CRUD');
-define('USER', 'root');
-define('PASS', '');
+//Configurações do banco de dados
+define('MYSQL_HOST', '127.0.0.1');
+define('MYSQL_DBNAME', 'CRUD');
+define('MYSQL_USERNAME', 'root');
+define('MYSQL_PASSWORD', '');
 
 //PESSOA
 require_once 'PessoaController.php';
