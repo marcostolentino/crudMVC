@@ -6,9 +6,9 @@ class PessoaModel {
 
     //CONSTRUCT
     public function __construct() {
-        
+
         //Configurações do banco de dados
-        $this->pdo = new PDO(DBLIB . ':host=' . MYSQL_HOST . ';dbname=' . MYSQL_DBNAME, MYSQL_USERNAME, MYSQL_PASSWORD);
+        $this->pdo = new PDO(MYSQL_DBLIB . ':host=' . MYSQL_HOST . ';dbname=' . MYSQL_DBNAME, MYSQL_USERNAME, MYSQL_PASSWORD);
         $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
 
