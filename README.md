@@ -1,4 +1,4 @@
-# Exemplo de CRUD MVC com PHP, Mysql e Pdo Simples
+# Exemplo de CRUD em MVC com PHP
 
 Projeto voltado a fazer um crud fácil e simples em MVC. 
 
